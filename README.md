@@ -21,3 +21,14 @@ Kubernetes is a portable, extensible, open-source platform for managing containe
 - kubelet
 - kube-proxy
 - container runtime
+
+
+## Commands 
+
+kubctl exec
+kubctl pc 
+kubctl cordon
+
+notes: 
+lens 
+
