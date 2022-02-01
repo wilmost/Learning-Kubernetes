@@ -25,9 +25,9 @@ Kubernetes is a portable, extensible, open-source platform for managing containe
 
 ## Commands 
 
-kubctl exec
-kubctl pc 
-kubctl cordon
+- kubctl exec
+- kubctl pc 
+- kubctl cordon
 
 notes: 
 lens 
