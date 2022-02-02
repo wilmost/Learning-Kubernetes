@@ -42,10 +42,23 @@ Responsable for running workloads.
 
 Objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster
 
-- Pods 
+- Pods: Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.  Pods are ephemeral in nature
 
-- Services
+- Services : A service in Kubernetes is an abstract way to expose an application running on a set of pods as a network service. A Service groups together a number of pods that perform the same function and presents them as a single entity.
 
+
+
+Kubectl  : CLI tool to allows you to connect to a cluster a management the cluster remotely
+
+
+## Running cluster local 
+
+ - minikube : create Kubernetes cluster in a single node
+ - virtual machine or container manager : virtualbox, vmware, docker, Hyper-V, parallels
+ - kubectl: command line tool
+```
+https://kubernetes.io/docs/tasks/tools/ 
+```
 
 ## Commands 
 
