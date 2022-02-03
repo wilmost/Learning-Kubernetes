@@ -59,12 +59,25 @@ Kubectl  : CLI tool to allows you to connect to a cluster a management the clust
 ```
 https://kubernetes.io/docs/tasks/tools/ 
 ```
+ minikube start --driver=docker
+ minikube status
+ minikube ip  
+
+ to login ssh:
+
+ `ssh -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)`
+
+
 
 ## Commands 
+- kubectl cluster-info
+- kubectl exec
+- kubectl pc 
+- kubectl get nodes
+- kubectl get pods
+- kubectl get pods --namespace=<namespace>
+- kubectl get namespaces
 
-- kubctl exec
-- kubctl pc 
-- kubctl cordon
 
 notes: 
 lens 
