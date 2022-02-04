@@ -69,7 +69,7 @@ https://kubernetes.io/docs/tasks/tools/
 
 
 
-## Commands 
+## kubectl Commands 
 - kubectl cluster-info
 - kubectl exec
 - kubectl pc 
@@ -78,7 +78,15 @@ https://kubernetes.io/docs/tasks/tools/
 - kubectl get namespaces  > list of namespaces
 - kubectl get pods --namespace=<namespace> > list pods in an specific namesapce
 - kubectl run <name of the pod> --image=<name of the image> > to create a pod
-- kubectl describe pod <podname>
+- kubectl describe pod <podname> 
+- kubectl get pods -o wide
+- kubectl delete pod <podname>
+
+## Deployment
+
+- kubectl create deployment <deployment name> --image=<image name>
+- kubectl get deployment  > list of deployments
+
 
 
 notes: 
