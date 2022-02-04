@@ -65,7 +65,7 @@ https://kubernetes.io/docs/tasks/tools/
 
  to login ssh:
 
- `ssh -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)`
+ `ssh -i ~/.minikube/machines/htominikube/id_rsa docker@$(minikube ip)`
 
 
 
@@ -80,8 +80,7 @@ https://kubernetes.io/docs/tasks/tools/
 - kubectl run <name of the pod> --image=<name of the image> > to create a pod
 - kubectl describe pod <podname> 
 - kubectl get pods -o wide
-- kubectl delete pod <podname>
-
+- kubectl delete pod <podna
 ## Deployment
 
 - kubectl create deployment <deployment name> --image=<image name>
