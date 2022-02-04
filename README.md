@@ -74,9 +74,11 @@ https://kubernetes.io/docs/tasks/tools/
 - kubectl exec
 - kubectl pc 
 - kubectl get nodes
-- kubectl get pods
-- kubectl get pods --namespace=<namespace>
-- kubectl get namespaces
+- kubectl get pods > list of pods in default namespace
+- kubectl get namespaces  > list of namespaces
+- kubectl get pods --namespace=<namespace> > list pods in an specific namesapce
+- kubectl run <name of the pod> --image=<name of the image> > to create a pod
+- kubectl describe pod <podname>
 
 
 notes: 
