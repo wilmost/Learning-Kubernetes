@@ -83,11 +83,20 @@ https://kubernetes.io/docs/tasks/tools/
 - kubectl delete pod <podna
 ## Deployment
 
+A Kubernete deployment is used to tell Kubernetes how to create or modify instances of the pods that hold a containerized application. Deployments can scale the number of replica pods, enable rollout of updated code in a controlled manner, or roll back to an earlier deployment version if necessary.
+
+
 - kubectl create deployment <deployment name> --image=<image name>
 - kubectl get deployment  > list of deployments
+- kubectl describe deployment <name of the deployment> show the details about an specific deployment
+- kubectl scale deployment <deployment name> --replicas=<number of replicas>  > scale in/out the deployment 
+- 
 
 
+notes:  
+- Selector : is used to connect pods with deployments 
+- ReplicaSet: purpose is to maintain a stable set of replica Pods running at any given time
 
-notes: 
+## Services
 lens 
 
