@@ -90,13 +90,24 @@ A Kubernete deployment is used to tell Kubernetes how to create or modify instan
 - kubectl get deployment  > list of deployments
 - kubectl describe deployment <name of the deployment> show the details about an specific deployment
 - kubectl scale deployment <deployment name> --replicas=<number of replicas>  > scale in/out the deployment 
+- kubectl delete deployment <deployment name> deletes a deployment
 - 
-
 
 notes:  
 - Selector : is used to connect pods with deployments 
 - ReplicaSet: purpose is to maintain a stable set of replica Pods running at any given time
 
 ## Services
-lens 
+
+- A service in Kubernetes is an abstract way to expose an application running on a set of pods as a network service 
+
+- a Service groups together a number of pods that perform the same function and presents them as a single entity.  
+
+**Commands** 
+
+- kubectl expose deployment <deployment name> --port=< external port number> --target-port=<internal port number>  > espose the internal services to a given port.
+- kubectl get services (SVC)  > shows a list of services 
+- kubect describe service <service name>  > shows the details about an expecific service 
+- kubectl delete service <service name> deletes a service 
+
 
