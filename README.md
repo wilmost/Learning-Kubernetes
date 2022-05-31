@@ -103,6 +103,9 @@ notes:
 
 - a Service groups together a number of pods that perform the same function and presents them as a single entity.  
 
+-ClusterIP
+-Load Balancer
+
 **Commands** 
 
 - kubectl expose deployment <deployment name> --port=< external port number> --target-port=<internal port number>  > espose the internal services to a given port.
