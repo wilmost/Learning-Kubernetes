@@ -69,7 +69,7 @@ https://kubernetes.io/docs/tasks/tools/
 
 
 
-## kubectl Commands 
+## kubectl Commands  // alias k=kubectl
 - kubectl cluster-info
 - kubectl exec
 - kubectl pc 
