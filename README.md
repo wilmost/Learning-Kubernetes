@@ -111,6 +111,11 @@ notes:
 - kubectl expose deployment <deployment name> --port=< external port number> --target-port=<internal port number>  > espose the internal services to a given port.
 - kubectl get services (SVC)  > shows a list of services 
 - kubect describe service <service name>  > shows the details about an expecific service 
-- kubectl delete service <service name> deletes a service 
+- kubectl delete service <service name> deletes a service  
 
+
+## Storage 
+
+
+Kubernetes supports many types of volumes. A Pod can use any number of volume types simultaneously. Ephemeral volume types have a lifetime of a pod, but persistent volumes exist beyond the lifetime of a pod. When a pod ceases to exist, Kubernetes destroys ephemeral volumes; however, Kubernetes does not destroy persistent volumes. For any kind of volume in a given pod, data is preserved across container restarts.
 
