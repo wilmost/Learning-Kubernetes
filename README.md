@@ -62,11 +62,13 @@ https://kubernetes.io/docs/tasks/tools/
  minikube start --driver=docker
  minikube status
  minikube ip  
-
+ 
  to login ssh:
-
  `ssh -i ~/.minikube/machines/htominikube/id_rsa docker@$(minikube ip)`
 
+To get the url for connection to a deploymente :
+minikube service <service name> 
+minikube service <service name> --url ; to get just the url
 
 
 ## kubectl Commands  // alias k=kubectl
@@ -104,7 +106,8 @@ notes:
 - a Service groups together a number of pods that perform the same function and presents them as a single entity.  
 
 -ClusterIP
--Load Balancer
+-Load Balancer 
+-Node Port
 
 **Commands** 
 
@@ -114,7 +117,10 @@ notes:
 - kubectl delete service <service name> deletes a service  
 
 note : 
---type=NodePort
+--type=NodePort 
+--type=LoadBalancer 
+
+StrategyType
 ## Storage 
 
 
