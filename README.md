@@ -68,7 +68,8 @@ https://kubernetes.io/docs/tasks/tools/
 
 To get the url for connection to a deploymente :
 minikube service <service name> 
-minikube service <service name> --url ; to get just the url
+minikube service <service name> --url ; to get just the url 
+minikube dashboard
 
 
 ## kubectl Commands  // alias k=kubectl
@@ -92,8 +93,9 @@ A Kubernete deployment is used to tell Kubernetes how to create or modify instan
 - kubectl get deployment  > list of deployments
 - kubectl describe deployment <name of the deployment> show the details about an specific deployment
 - kubectl scale deployment <deployment name> --replicas=<number of replicas>  > scale in/out the deployment 
-- kubectl delete deployment <deployment name> deletes a deployment
-- 
+- kubectl delete deployment <deployment name> deletes a deployment 
+- kubectl set image deployment <deployment name> <pods name> = <image> ; to update the image of a deployment 
+- kubectl rollout status deploy <deployment name>
 
 notes:  
 - Selector : is used to connect pods with deployments 
@@ -105,9 +107,13 @@ notes:
 
 - a Service groups together a number of pods that perform the same function and presents them as a single entity.  
 
+### Types 
+type determines how the Service is exposed. Defaults to ClusterIP. Valid options are ExternalName, ClusterIP, NodePort, and LoadBalancer.
+
 -ClusterIP
 -Load Balancer 
 -Node Port
+-ExternalName
 
 **Commands** 
 
