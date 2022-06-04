@@ -113,7 +113,8 @@ notes:
 - kubect describe service <service name>  > shows the details about an expecific service 
 - kubectl delete service <service name> deletes a service  
 
-
+note : 
+--type=NodePort
 ## Storage 
 
 
