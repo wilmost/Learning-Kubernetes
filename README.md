@@ -110,12 +110,12 @@ notes:
 ### Types 
 type determines how the Service is exposed. Defaults to ClusterIP. Valid options are ExternalName, ClusterIP, NodePort, and LoadBalancer.
 
--ClusterIP
--Load Balancer 
--Node Port
--ExternalName
+- ClusterIP
+- Load Balancer 
+- Node Port
+- ExternalName
 
-**Commands** 
+### Commands 
 
 - kubectl expose deployment <deployment name> --port=< external port number> --target-port=<internal port number>  > espose the internal services to a given port.
 - kubectl get services (SVC)  > shows a list of services 
@@ -123,8 +123,8 @@ type determines how the Service is exposed. Defaults to ClusterIP. Valid options
 - kubectl delete service <service name> deletes a service  
 
 note : 
---type=NodePort 
---type=LoadBalancer 
+`--type=NodePort` 
+`--type=LoadBalancer` 
 
 StrategyType
 ## Storage 
