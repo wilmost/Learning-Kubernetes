@@ -95,7 +95,8 @@ A Kubernete deployment is used to tell Kubernetes how to create or modify instan
 - kubectl scale deployment <deployment name> --replicas=<number of replicas>  > scale in/out the deployment 
 - kubectl delete deployment <deployment name> deletes a deployment 
 - kubectl set image deployment <deployment name> <pods name> = <image> ; to update the image of a deployment 
-- kubectl rollout status deploy <deployment name>
+- kubectl rollout status deploy <deployment name> 
+- kubectl delete -f [deployment file]
 
 notes:  
 - Selector : is used to connect pods with deployments 
