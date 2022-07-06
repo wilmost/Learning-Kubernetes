@@ -36,6 +36,14 @@ Responsable for running workloads.
 - **container runtime** : container runtime like Docker or rkt or cri-o.
 
 
+## Kubernetes Configuration
+
+- All-in-One Single-Node Installation
+- Single-Control Plane and Multi-Worker Installation 
+- Single-Control Plane with Single-Node etcd, and Multi-Worker Installation 
+- Multi-Control Plane and Multi-Worker Installation 
+- Multi-Control Plane with Multi-Node etcd, and Multi-Worker Installation
+
 
 
 ## Kubernetes Objects 
@@ -49,6 +57,7 @@ Objects are persistent entities in the Kubernetes system. Kubernetes uses these 
 
 
 Kubectl  : CLI tool to allows you to connect to a cluster a management the cluster remotely
+
 
 
 ## Running cluster local 
