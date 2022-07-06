@@ -38,11 +38,11 @@ Responsable for running workloads.
 
 ## Kubernetes Configuration
 
-- All-in-One Single-Node Installation
-- Single-Control Plane and Multi-Worker Installation 
-- Single-Control Plane with Single-Node etcd, and Multi-Worker Installation 
-- Multi-Control Plane and Multi-Worker Installation 
-- Multi-Control Plane with Multi-Node etcd, and Multi-Worker Installation
+- **All-in-One Single-Node Installation** : the control plane and worker components are installed and running on a single-node
+- **Single-Control Plane and Multi-Worker Installation** :single-control plane node running a stacked etcd instance
+- **Single-Control Plane with Single-Node etcd, and Multi-Worker Installation** :single-control plane node with an external etcd instance  
+- **Multi-Control Plane and Multi-Worker Installation** :  multiple control plane nodes configured for High-Availability (HA), with each control plane node running a stacked etcd instance
+- **Multi-Control Plane with Multi-Node etcd, and Multi-Worker Installation**: multiple control plane nodes configured in HA mode, with each control plane node paired with an external etcd instance.
 
 
 
