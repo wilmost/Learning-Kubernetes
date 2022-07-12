@@ -1,6 +1,6 @@
 # Kubernetes
 ##
-### My path learning  **Kuberntes**
+ My path learning  **Kuberntes**
 
 
 ## Container orchestration
@@ -44,9 +44,13 @@ Responsable for running workloads.
 - **Multi-Control Plane and Multi-Worker Installation** :  multiple control plane nodes configured for High-Availability (HA), with each control plane node running a stacked etcd instance
 - **Multi-Control Plane with Multi-Node etcd, and Multi-Worker Installation**: multiple control plane nodes configured in HA mode, with each control plane node paired with an external etcd instance.
 
+## Installing Production Clusters with Deployment Tools
 
 
 ## Kubernetes Objects 
+- kubeadm
+- kubespray 
+- kops
 
 Objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster
 
