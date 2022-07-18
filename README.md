@@ -59,7 +59,11 @@ Objects are persistent entities in the Kubernetes system. Kubernetes uses these 
 - Namespaces: Allows to particion the cluster into virtual subcluster. The names of the resources/objects created inside a Namespace are unique, but not across Namespaces in the cluster. `kubectl get namespaces`. Generally, Kubernetes creates four Namespaces out of the box: **kube-system**, **kube-public**, **kube-node-lease**, and default.
 
 
-- Pods: Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.  Pods are ephemeral in nature
+- Pods: Pods are the smallest deployable units of computing that you can create and manage in Kubernetes. Pods are ephemeral in nature. A Pod is a logical collection of one or more containers, enclosing and isolating them to ensure that they:
+
+  - Are scheduled together on the same host with the Pod.
+  - Share the same network namespace, meaning that they share a single IP address originally assigned to the Pod.
+  - Have access to mount the same external storage (volumes) and other common dependencies.
 
 - Services : A service in Kubernetes is an abstract way to expose an application running on a set of pods as a network service. A Service groups together a number of pods that perform the same function and presents them as a single entity.
 
