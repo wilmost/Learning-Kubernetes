@@ -56,7 +56,8 @@ Objects are persistent entities in the Kubernetes system. Kubernetes uses these 
 
 - Nodes: are virtual identities assigned by Kubernetes to the systems part of the cluster - whether Virtual Machines, bare-metal, Containers, etc. These identities are    unique to each system, and are used by the cluster for resources accounting and monitoring purposes, which helps with workload management throughout the cluster. 
 
-- Namespaces:
+- Namespaces: Allows to particion the cluster into virtual subcluster. The names of the resources/objects created inside a Namespace are unique, but not across Namespaces in the cluster. `kubectl get namespaces`. Generally, Kubernetes creates four Namespaces out of the box: **kube-system**, **kube-public**, **kube-node-lease**, and default.
+
 
 - Pods: Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.  Pods are ephemeral in nature
 
