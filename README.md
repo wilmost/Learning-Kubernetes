@@ -44,13 +44,13 @@ Responsable for running workloads.
 - **Multi-Control Plane and Multi-Worker Installation** :  multiple control plane nodes configured for High-Availability (HA), with each control plane node running a stacked etcd instance
 - **Multi-Control Plane with Multi-Node etcd, and Multi-Worker Installation**: multiple control plane nodes configured in HA mode, with each control plane node paired with an external etcd instance.
 
-## Installing Production Clusters with Deployment Tools
+## Installing Production Clusters with Deployment Tools 
 
-
-## Kubernetes Objects 
-- kubeadm
+-kubeadm
 - kubespray 
 - kops
+
+## Kubernetes Objects 
 
 Objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster
 
