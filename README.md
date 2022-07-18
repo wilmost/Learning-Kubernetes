@@ -46,13 +46,17 @@ Responsable for running workloads.
 
 ## Installing Production Clusters with Deployment Tools 
 
--kubeadm
+- kubeadm
 - kubespray 
 - kops
 
 ## Kubernetes Objects 
 
 Objects are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster
+
+- Nodes: are virtual identities assigned by Kubernetes to the systems part of the cluster - whether Virtual Machines, bare-metal, Containers, etc. These identities are    unique to each system, and are used by the cluster for resources accounting and monitoring purposes, which helps with workload management throughout the cluster. 
+
+- Namespaces:
 
 - Pods: Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.  Pods are ephemeral in nature
 
